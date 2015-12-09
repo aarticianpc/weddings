@@ -3,5 +3,13 @@
 {% block title %}Welcome to Weddings{% endblock %}
 
 {% block content %}
-<h1>Welcome to Index Page</h1>
+{% load staticfiles %}
+	<div class="logo-img">
+		<div class="logo">
+			<img src="{% static 'res/img/logo.png' %}" alt="logo">
+		</div>
+		<!-- Standard button -->
+		<a href="bride.html" type="button" class="btn btn-default">ENTER</a>
+	</div>
+
 {% endblock %}

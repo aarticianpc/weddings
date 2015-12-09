@@ -3,5 +3,103 @@
 {% block title %}Groom{% endblock %}
 
 {% block content %}
-<h1>Welcome to Groom Page</h1>
+
+{% load staticfiles %}
+<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title text-center">
+					<h1>MARINE FLORISTS</h1>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container text-center">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="bride.html">Bride <span class="sr-only">(current)</span></a></li>
+					<li><a href="reception.html">Reception</a></li>
+					<li><a href="ceremony.html">Ceremony</a></li>
+					<li class="active"><a href="groom.html">Groom</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="carousel">
+					<figure id="spinner">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					<img src="{% static 'res/img/slide1.jpg' %}" alt="logo">
+					</figure>
+				</div>
+				<span style=float:left class=ss-icon onclick="galleryspin('-')">&lt;</span>
+				<span style=float:right class=ss-icon onclick="galleryspin('')">&gt;</span>
+			</div>
+		</div>	
+	</div>	
+
+	<footer>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="">
+					<h5>OUR ADDRESS</h5>
+					<p> 
+						450 Rogers Ave
+						Prospect Lefferts Gardens
+						Brooklyn, NY 11225
+						Cross Streets:
+						Lincoln Rd & Lefferts Ave
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="">
+					<h5>OUR GUARANTEE</h5>
+					<p>When placing an order, be aware that some flower substitution may occur due to seasonal availability. We guarantee that your order will always retain the equivalent quality of flowers and style you expect for each and every order.</p>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="">
+					<h5>OUR SOCIAL</h5>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="">
+					<h5>PHONE</h5>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="">
+					<img src="{% static 'res/img/rated.png' %}" alt="logo">
+				</div>
+			</div>
+		</div>
+
+	</footer>
 {% endblock %}
