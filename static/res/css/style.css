@@ -40,15 +40,14 @@ img{
 
 .smart-image{
 	position: absolute;
-    top: 100%;
-    bottom: auto;
-    right: 13%;
-    left: auto;
+  top: 100%;
+  bottom: auto;
+  right: 13%;
+  left: auto;
 }
 
 div#carousel { 
   perspective: 1200px; 
-  background: #100000; 
   padding-top: 10px; 
   font-size:0; 
   margin-bottom: 3rem; 
