@@ -20,6 +20,39 @@
   <link rel="stylesheet" href="{% static 'res/css/style.css' %}">
 </head>
 <body class="background">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title text-center">
+          <h1>MARINE FLORISTS</h1>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container text-center">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a href="home" class="navbar-brand">
+          <img src="{% static 'res/img/logo.png' %}" alt='{% include "_brandname.html" %}'>
+          <span class="brand-name">{% include "_brandname.html" %}</span>
+        </a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          {% block navbar-nav %} {% endblock %}
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
   <div id="content">
     {% block content %}{% endblock %}
   </div>  

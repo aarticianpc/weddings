@@ -29,10 +29,24 @@ img{
 }
 
 .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+  background-color: silver;
+  border-color: silver;
+  border-radius: 0;
 }
-
+.navbar-brand {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.navbar-brand > img {
+  width: auto;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-brand .brand-name {
+  color: #000;
+  text-transform: capitalize;
+}
 .description p{
 	color: #ccc;
     font-size: 20px;
